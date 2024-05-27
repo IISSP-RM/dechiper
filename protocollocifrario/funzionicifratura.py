@@ -8,6 +8,7 @@ def intestazione():
 def menu():
     print("************************************************")
     print("* 1 per avviare il protocollo di decriptazione.*")
+    print("* 2 per avviare il protocollo di criptazione.  *")
     print("* E per uscire dal programma.                  *")
     print("************************************************")
 
@@ -33,3 +34,21 @@ def decriptabase(parola):
 #ine = input().upper()######
 #print(criptabase(ine))#####
 ####END_DEBUG***************
+
+def criptabase(parola):
+    cifrato = ['J', '?', 'W', 'B', ':', 'Q', 'H', '.', 'Z', 'X', 'R', ';', 'N', 'T', ' ', '7', '3', '9', '1', '4', '2', '6', '0', '5', '8', 'C', 'A', 'O', 'S', '!', 'D', 'G', 'I', 'M', 'P', 'E', ',', 'F', 'U', 'L', 'Y', 'K', 'V']
+    chiaro = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ' ', '!', '?', '.', ',', ';', ':', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    
+    #risultato = []
+    risultato2 = [] # Chiaro
+    
+    for char in parola:
+        if char in cifrato:
+            index = chiaro.index(char)
+            risultato2.append(cifrato[index])
+            #risultato2.append(cifrato[index])
+        else:
+            risultato2.append('?') 
+            #risultato2.append('?')
+
+    return ''.join(risultato2)

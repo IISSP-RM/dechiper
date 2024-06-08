@@ -283,3 +283,6 @@ def germanico(parola):
 - Se il carattere è presente nella lista `chiaro`, viene determinato l'indice corrispondente nella lista `cifrato`.
 - Viene quindi aggiunto il carattere corrispondente dalla lista `chiaro` alla lista `risultato`.
 - Se il carattere non è presente nella lista `chiaro`, viene aggiunto direttamente alla lista `risultato`.
+## Problemi noti
+- La funzione dechiper non funziona in quanto work in progress (WIP).
+- Alcuni sistemi rilevano il file eseguibile (`cifratura.exe`) non sicuro.

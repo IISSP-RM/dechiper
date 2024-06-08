@@ -298,8 +298,10 @@ def germanico(parola):
 > [!WARNING]
 > Alcuni sistemi rilevano il file eseguibile (`cifratura.exe`) non sicuro.
 ### Risoluzione eseguibile non sicuro
-> ![PC protetto da Windows](https://imgur.com/SM0pEoT "PC protetto da Windows")
->  La schermata che ci appare è la seguente, pertanto premiamo `Ulteriori informazioni`.
+![Risoluzione.](https://cdn.discordapp.com/attachments/1012823427574403135/1249019522417950851/cunnutuwindows.PNG?ex=6665c793&is=66647613&hm=05597d961b602c2bd381d8c01462c3c2021126ae3c853608e4325da4887df5c2&)
 
-> ![PC protetto da Windows](https://imgur.com/7tumuUi "PC protetto da Windows")
-> Ci apparirà il pulsante `Esegui comunque`, lo premiamo e il programma ci si avvierà.
+La schermata che ci appare è la seguente, pertanto premiamo `Ulteriori informazioni`.
+
+![Risoluzione pt.2.](https://cdn.discordapp.com/attachments/1012823427574403135/1249019522137198674/cunnutuwindows2.PNG?ex=6665c793&is=66647613&hm=91fcfebb166536ecb9e2efbdd7d5ee7229fd612e711731cfaa5813387e8aba80&)
+
+Ci apparirà il pulsante `Esegui comunque`, lo premiamo e il programma ci si avvierà.

@@ -1,5 +1,13 @@
 # Cipher & Decipher V1
 Criptatore e Decriptatore in Python.
+> [!IMPORTANT]  
+> Il programma non presenta la funzione dechiper in quanto è ancora in fase di scviluppo.
+
+> [!NOTE]  
+> La presente documentazione, il programma e qualsiasi cosa ad esso correlato sono stati creati per scopi didattici, pertanto non si ritiene sicuro per un utilizzo professionale.
+
+> [!TIP]
+> Non eseguire il programma come amministratore in quanto non necessario.
 ## Programma [cifratura.py]
 ```
 import funzionicifratura, os, time, Color_Console
@@ -225,7 +233,7 @@ def albam(parola):
 - Se il carattere è presente nell'alfabeto normale `chiaro`, viene determinato l'indice corrispondente.
 - Viene quindi aggiunto il carattere corrispondente dall'alfabeto cifrato alla lista `risultato`.
 - Se il carattere non è presente nell'alfabeto normale, viene aggiunto direttamente alla lista `risultato`.
-### Protocollo di conversione ATBAH def atbah(parola)]
+### Protocollo di conversione ATBAH [def atbah(parola)]
 ```
 def atbah(parola):
     chiaro = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -284,5 +292,14 @@ def germanico(parola):
 - Viene quindi aggiunto il carattere corrispondente dalla lista `chiaro` alla lista `risultato`.
 - Se il carattere non è presente nella lista `chiaro`, viene aggiunto direttamente alla lista `risultato`.
 ## Problemi noti
-- La funzione dechiper non funziona in quanto work in progress (WIP).
-- Alcuni sistemi rilevano il file eseguibile (`cifratura.exe`) non sicuro.
+> [!CAUTION]
+> La funzione dechiper non funziona in quanto work in progress (WIP).
+
+> [!WARNING]
+> Alcuni sistemi rilevano il file eseguibile (`cifratura.exe`) non sicuro.
+### Risoluzione eseguibile non sicuro
+> ![PC protetto da Windows](https://imgur.com/SM0pEoT "PC protetto da Windows")
+>  La schermata che ci appare è la seguente, pertanto premiamo `Ulteriori informazioni`.
+
+> ![PC protetto da Windows](https://imgur.com/7tumuUi "PC protetto da Windows")
+> Ci apparirà il pulsante `Esegui comunque`, lo premiamo e il programma ci si avvierà.

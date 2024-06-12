@@ -9,7 +9,7 @@ Criptatore e Decriptatore in Python.
 > [!TIP]
 > Non eseguire il programma come amministratore in quanto non necessario.
 ## Programma [cifratura.py]
-```
+```python
 import funzionicifratura, os, time, Color_Console
 Color_Console.color(text="green", bg="black")
 
@@ -99,7 +99,7 @@ while ex!="V" :
 - Diverse stampe a schermo forniscono informazioni all'utente, come il risultato delle operazioni di cifratura/decriptazione e messaggi di ritorno al menu principale.
 ## Funzioni Cifratura [funzionicifratura.py]
 ### Intestazione [def intestazione()]
-```
+```python
 def intestazione():
     print("                   CIPHER V1")
     print("              di Marco Lo Giudice")
@@ -107,7 +107,7 @@ def intestazione():
 ```
 Stampa l'intestazione del programma.
 ### Menù di scelta [def menu()]
-```
+```python
 def menu():
     print("******************************************************")
     print("* 1 per avviare il protocollo di decriptazione. WIP! *")
@@ -117,7 +117,7 @@ def menu():
 ```
 Stampa il testo del menù di scelta iniziale del programma
 ### Protocollo base di criptazione [def criptabase(parola)]
-```
+```python
 def criptabase(parola):
     cifrato = ['J', '?', 'W', 'B', ':', 'Q', 'H', '.', 'Z', 'X', 'R', ';', 'N', 'T', ' ', '7', '3', '9', '1', '4', '2', '6', '0', '5', '8', 'C', 'A', 'O', 'S', '!', 'D', 'G', 'I', 'M', 'P', 'E', ',', 'F', 'U', 'L', 'Y', 'K', 'V']
     chiaro = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ' ', '!', '?', '.', ',', ';', ':', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -186,7 +186,7 @@ def criptabase(parola):
 | 8 | K |
 | 9 | V |
 ### Protocollo di conversione in ASCII [def convertitore(risultato)]
-```
+```python
 def convertitore(risultato):
     risultato4 = []
     for char in risultato:
@@ -196,7 +196,7 @@ def convertitore(risultato):
 - Per ogni carattere, viene utilizzata la funzione `ord(char)` per ottenere il suo valore ASCII decimale come una stringa.
 - Il valore ASCII decimale viene aggiunto alla lista `risultato4`
 ### Protocollo di conversione ATBASH [def atbash(parola)]
-```
+```python
 def atbash(parola):
     chiaro = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     cifrato = 'ZYXWVUTSRQPONMLKJIHGFEDCBA'
@@ -215,7 +215,7 @@ def atbash(parola):
 - Viene quindi aggiunto il carattere corrispondente dall'alfabeto cifrato di Atbash `cifrato` alla lista `risultato`.
 - Se il carattere non è presente nell'alfabeto normale, viene aggiunto direttamente alla lista risultato.
 ### Protocollo di conversione ALBAM [def albam(parola)]
-```
+```python
 def albam(parola):
     chiaro = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     cifrato = 'NOPQRSTUVWXYZABCDEFGHIJKLM'
@@ -234,7 +234,7 @@ def albam(parola):
 - Viene quindi aggiunto il carattere corrispondente dall'alfabeto cifrato alla lista `risultato`.
 - Se il carattere non è presente nell'alfabeto normale, viene aggiunto direttamente alla lista `risultato`.
 ### Protocollo di conversione ATBAH [def atbah(parola)]
-```
+```python
 def atbah(parola):
     chiaro = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     cifrato = 'TSRQPONMLKJIHGFEDCBAUVWXYZ'
@@ -253,7 +253,7 @@ def atbah(parola):
 - Viene quindi aggiunto il carattere corrispondente dall'alfabeto cifrato secondo il metodo Atbah alla lista `risultato`.
 - Se il carattere non è presente nell'alfabeto normale, viene aggiunto direttamente alla lista `risultato`.
 ### Protocollo di Cesare [def cesare(parola, shift)]
-```
+```python
 def cesare(parola, shift):
     chiaro = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     risultato = []
@@ -272,7 +272,7 @@ def cesare(parola, shift):
 - Il carattere corrispondente a questo nuovo indice nell'alfabeto viene aggiunto alla lista `risultato`.
 - Se il carattere non è una lettera, viene aggiunto direttamente alla lista `risultato`.
 ### Protocollo Germanico [def cesare(parola, shift)]
-```
+```python
 def germanico(parola):
     cifrato = ['J', '?', 'W', 'B', ':', 'Q', 'H', '.', 'Z', 'X', 'R', ';', 'N', 'T', ' ', '7', '3', '9', '1', '4', '2', '6', '0', '5', '8', 'C', 'A', 'O', 'S', '!', 'D', 'G', 'I', 'M', 'P', 'E', ',', 'F', 'U', 'L', 'Y', 'K', 'V']
     chiaro = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ' ', '!', '?', '.', ',', ';', ':', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
